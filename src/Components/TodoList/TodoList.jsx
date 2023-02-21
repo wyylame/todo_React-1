@@ -3,6 +3,7 @@ import TodoComponent from "../TodoComponent/TodoComponent";
 import classes from "./TodoList.module.css";
 
 const TodoList = ({ todos, removeItem, statusTodo }) => {
+  // в map исправь key у элемента
   return (
     <div className={classes.todoList}>
       <h1 className={classes.title}>Список заданий:</h1>
