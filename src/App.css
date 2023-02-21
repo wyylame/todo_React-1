@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app__content {
+  width: 40%;
+  margin-top: 100px;
+}
+
+.todo__title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 100;
+  font-family: serif;
+  color: gray;
+}
+
+.netu-todo__title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
