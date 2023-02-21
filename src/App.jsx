@@ -9,7 +9,7 @@ function App() {
     {
       id: 1, 
       body: 'viubiudniw qfqu 1',
-      status: true // лучше, чтобы название логически было подобрано. Для true/false подходит completed, для status - "completed"/"active"
+      status: true
     },
     {
       id: 2, 
@@ -37,13 +37,12 @@ function App() {
     setTodos([...todos, newTodo]);
   };
 
-  const [filtered, setFiltered] = useState(todos); // стейты нужно держать в самом начале компонента
+  const [filtered, setFiltered] = useState(todos);
 
   useEffect(() => {
     setFiltered(todos)
   }, [todos])
 
-  // что-то непонятное происходит в statusTodo
   const statusTodo = (todo) => {
     let newTodos = [...todos].filter(n => {
       if (n.id === todo.id) {
